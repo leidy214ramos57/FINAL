@@ -38,3 +38,21 @@ FOR i IN 1 .. n
 end;
 
 select find_digits(12) from dual;
+
+
+/*3. Stored Procedure (0.5)
+
+create table digits (n integer, pairs integer);
+
+Insert some records in the table just for the first column.
+
+Create a stored procedure called "CALCULATE_FIND_DIGITS" which will open a cursor for all the records which are in the digits table,
+for each row you should call the function find_digits; you will update the column. "pairs" with the result of the function. */
+
+create table pares_enteros(
+n integer not null,
+pares integer 
+);
+
+insert into  pares_enteros values(1,NULL),
+insert into  pares_enteros values(2,NULL);
